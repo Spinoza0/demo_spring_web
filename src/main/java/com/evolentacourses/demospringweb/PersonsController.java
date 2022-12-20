@@ -69,7 +69,7 @@ public class PersonsController {
     }
 
     @DeleteMapping("/persons/{id}/messages/{messageId}")
-    public ResponseEntity<Person> deleteMessageFromPerson(@PathVariable int id, @PathVariable int messageId) {
+    public ResponseEntity<Person> deleteMessage(@PathVariable int id, @PathVariable int messageId) {
         return service.deleteMessageFromPerson(id, messageId);
     }
 }

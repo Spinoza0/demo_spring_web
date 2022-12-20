@@ -35,11 +35,39 @@ public class Message {
         return id;
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public LocalDateTime getTime() {
+        return time;
+    }
+
     public void setTime(LocalDateTime time) {
         this.time = time;
     }
 
+    public Person getPerson() {
+        return person;
+    }
+
     public void setPerson(Person person) {
         this.person = person;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getText() {
+        return text;
+    }
+
+    public void setText(String text) {
+        this.text = text;
     }
 }
