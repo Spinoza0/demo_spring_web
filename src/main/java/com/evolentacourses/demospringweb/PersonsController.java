@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.Optional;
 
+@SuppressWarnings({"unused"})
 @RestController
 public class PersonsController {
     @Autowired
