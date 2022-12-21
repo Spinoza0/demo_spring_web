@@ -35,10 +35,12 @@ public class Message {
         return id;
     }
 
+    @SuppressWarnings({"unused"})
     public void setId(int id) {
         this.id = id;
     }
 
+    @SuppressWarnings({"unused"})
     public LocalDateTime getTime() {
         return time;
     }
@@ -47,6 +49,7 @@ public class Message {
         this.time = time;
     }
 
+    @SuppressWarnings({"unused"})
     public Person getPerson() {
         return person;
     }
@@ -55,18 +58,22 @@ public class Message {
         this.person = person;
     }
 
+    @SuppressWarnings({"unused"})
     public String getTitle() {
         return title;
     }
 
+    @SuppressWarnings({"unused"})
     public void setTitle(String title) {
         this.title = title;
     }
 
+    @SuppressWarnings({"unused"})
     public String getText() {
         return text;
     }
 
+    @SuppressWarnings({"unused"})
     public void setText(String text) {
         this.text = text;
     }

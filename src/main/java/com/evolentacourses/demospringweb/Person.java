@@ -22,6 +22,7 @@ public class Person {
     public Person() {
     }
 
+    @SuppressWarnings({"unused"})
     public Person(
             int id,
             String firstname,
@@ -61,6 +62,7 @@ public class Person {
         this.id = id;
     }
 
+    @SuppressWarnings({"unused"})
     public int getId() {
         return id;
     }
@@ -69,38 +71,47 @@ public class Person {
         return messages;
     }
 
+    @SuppressWarnings({"unused"})
     public void setMessages(List<Message> messages) {
         this.messages = messages;
     }
 
+    @SuppressWarnings({"unused"})
     public String getFirstname() {
         return firstname;
     }
 
+    @SuppressWarnings({"unused"})
     public void setFirstname(String firstname) {
         this.firstname = firstname;
     }
 
+    @SuppressWarnings({"unused"})
     public String getSurname() {
         return surname;
     }
 
+    @SuppressWarnings({"unused"})
     public void setSurname(String surname) {
         this.surname = surname;
     }
 
+    @SuppressWarnings({"unused"})
     public String getLastname() {
         return lastname;
     }
 
+    @SuppressWarnings({"unused"})
     public void setLastname(String lastname) {
         this.lastname = lastname;
     }
 
+    @SuppressWarnings({"unused"})
     public LocalDate getBirthday() {
         return birthday;
     }
 
+    @SuppressWarnings({"unused"})
     public void setBirthday(LocalDate birthday) {
         this.birthday = birthday;
     }
