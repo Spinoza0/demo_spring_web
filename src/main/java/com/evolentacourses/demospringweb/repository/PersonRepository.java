@@ -1,4 +1,4 @@
-package com.evolentacourses.demospringweb.data.repository;
+package com.evolentacourses.demospringweb.repository;
 
 import com.evolentacourses.demospringweb.model.Person;
 import org.springframework.data.repository.CrudRepository;
