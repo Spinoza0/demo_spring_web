@@ -1,8 +1,8 @@
 package com.evolentacourses.demospringweb.service;
 
-import com.evolentacourses.demospringweb.repository.PersonRepository;
 import com.evolentacourses.demospringweb.model.Message;
 import com.evolentacourses.demospringweb.model.Person;
+import com.evolentacourses.demospringweb.repository.PersonRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -30,6 +30,10 @@ public class PersonService {
 
     public Optional<Person> findPersonById(int id) {
         return repository.findById(id);
+    }
+
+    public Iterable<Person> findPersonByLastname(String name) {
+        return repository.findPersonByLastnameContainingIgnoreCase(name);
     }
 
     public ResponseEntity<Message> getMessage(int personId, int messageId) {

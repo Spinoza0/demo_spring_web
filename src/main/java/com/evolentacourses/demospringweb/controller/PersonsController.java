@@ -1,8 +1,8 @@
 package com.evolentacourses.demospringweb.controller;
 
-import com.evolentacourses.demospringweb.service.PersonService;
 import com.evolentacourses.demospringweb.model.Message;
 import com.evolentacourses.demospringweb.model.Person;
+import com.evolentacourses.demospringweb.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -30,6 +30,11 @@ public class PersonsController {
     @GetMapping("/persons")
     public Iterable<Person> getPersons() {
         return service.getPersons();
+    }
+
+    @GetMapping("/persons/find")
+    public Iterable<Person> getPersonByLastname(@RequestParam String lastname) {
+        return service.findPersonByLastname(lastname);
     }
 
     @GetMapping("/persons/{id}")
