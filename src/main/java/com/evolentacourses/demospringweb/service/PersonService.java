@@ -32,8 +32,8 @@ public class PersonService {
         return repository.findById(id);
     }
 
-    public Iterable<Person> findPersonByLastname(String name) {
-        return repository.findPersonByLastnameContainingIgnoreCase(name);
+    public Iterable<Person> findPersonByLastname(String lastname) {
+        return repository.findPersonByLastnameContainingIgnoreCase(lastname);
     }
 
     public ResponseEntity<Message> getMessage(int personId, int messageId) {
