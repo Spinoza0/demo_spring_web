@@ -1,5 +1,8 @@
-package com.evolentacourses.demospringweb;
+package com.evolentacourses.demospringweb.data.service;
 
+import com.evolentacourses.demospringweb.data.repository.PersonRepository;
+import com.evolentacourses.demospringweb.model.Message;
+import com.evolentacourses.demospringweb.model.Person;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
